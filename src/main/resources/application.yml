@@ -4,9 +4,18 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
+  profiles:
+    active: dev
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
 logging:
   level:
     com:
       back: debug
 server:
   port: 8080
+
+
+
+
